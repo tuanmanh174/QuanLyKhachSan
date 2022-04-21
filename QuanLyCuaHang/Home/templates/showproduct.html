@@ -1,0 +1,13 @@
+{%extends 'base.html'%}
+{% load static %}
+
+{%block content%}
+{%for product in products%}
+<tr>
+    <td align="center">{{ product.id }}</td>
+    <td>{{ product.Ten_San_Pham }}</td>
+    <td>{{ product.Ma_San_Pham }}</td>
+</tr>
+{%endfor%}
+
+{%endblock%}
